@@ -1,3 +1,4 @@
+
 # Python Mini Compiler (Embedded Edition)
 
 A fully optimized, lightweight mini compiler written in Python for a restricted Lua-like language. This project emphasizes extreme modularity, minimal memory footprint, and constant-folding optimization tailored for an embedded-system style environment.
@@ -52,30 +53,4 @@ make test
 
 # The optimized output is dumped into:
 cat output.tac
-```
 
----
-
-## 🖥️ Presentation Slides (PPT Content)
-
-The following content can be directly mapped into your Hackathon PowerPoint slides.
-
-### Slide 1: Compiler Architecture
-- **Goal**: Develop a robust, lightweight compiler for embedded system profiles.
-- **Constraint**: Zero external libraries. Modularity (Every file < 200 lines).
-- **Core Engine**: A 5-phase sequential pipeline (Lexer ➔ Parser ➔ Semantic ➔ Optimizer ➔ Code Gen).
-
-### Slide 2: The Parser & AST Pipeline
-- **Methodology**: Recursive Descent Parser evaluating proper arithmetic operator precedence.
-- **Memory Footprint**: Extremely lightweight Abstract Syntax Tree instances minimizing dict overhead.
-- **Output**: Generates pristine Three Address Code (TAC) representing flattened machine state.
-
-### Slide 3: Embedded Optimizations (Constant Folding)
-- **Problem**: Raw AST generation results in bloated temporaries and excessive runtime evaluation.
-- **Solution**: Aggressive Constant Folding mapping static trees (e.g. `10 < 20`) directly to boolean nodes (`true`).
-- **Result**: Constant folding reduced runtime operations and temporary variable generation significantly.
-
-### Slide 4: Real-World Benchmarks
-- We isolated memory allocations and instruction cycle counts using a custom-built Simulator.
-- Memory peaks were dropped drastically. TAC byte-size shrank.
-- **Conclusion**: Early-stage compilation optimization saves critical runtime hardware cycles on low-end systems!
