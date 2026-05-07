@@ -1,0 +1,32 @@
+
+========================================
+         COMPILATION BENCHMARK          
+========================================
+Phase                | Time (ms)      
+----------------------------------------
+Lexical Analysis     | 2.7189         
+Parsing              | 0.0071         
+Semantic Analysis    | 0.0057         
+Optimization         | 0.0035         
+TAC Generation       | 0.0041         
+----------------------------------------
+Total Time           | 2.7393         
+Memory Peak (KB)     | 15.73          
+TAC Instructions     | 0              
+========================================
+
+========================================
+         COMPILATION BENCHMARK          
+========================================
+Phase                | Time (ms)      
+----------------------------------------
+Lexical Analysis     | 2.3289         
+Parsing              | 0.1564         
+Semantic Analysis    | 0.0598         
+Optimization         | 0.0339         
+TAC Generation       | 0.1139         
+----------------------------------------
+Total Time           | 2.6929         
+Memory Peak (KB)     | 46.10          
+TAC Instructions     | 38             
+========================================
